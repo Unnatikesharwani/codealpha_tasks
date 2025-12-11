@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeTunes Player</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <div class="player-container">
+        <div class="player-header">
+            <div class="playlist-toggle" id="playlist-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <span>NOW PLAYING</span>
+            <div class="spacer"></div> 
+        </div>
+
+        <div class="img-container">
+            <img src="assets/images/cover.png" alt="Album Art" id="cover">
+        </div>
+
+        <div class="song-details">
+            <h2 id="title">Loading...</h2>
+            <h3 id="artist">Start Playing</h3>
+        </div>
+
+        <div class="progress-container">
+            <div class="time-info">
+                <span id="curr-time">0:00</span>
+                <span id="dur-time">0:00</span>
+            </div>
+            <input type="range" min="0" max="100" value="0" class="progress-bar" id="progress">
+        </div>
+
+        <div class="controls">
+            <button class="action-btn" id="prev" title="Previous">
+                <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="action-btn big" id="play" title="Play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="action-btn" id="next" title="Next">
+                <i class="fa-solid fa-forward"></i>
+            </button>
+        </div>
+
+        <div class="volume-container">
+            <i class="fa-solid fa-volume-high" id="volume-icon"></i>
+            <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider" id="volume">
+        </div>
+
+        <!-- Playlist Panel -->
+        <div class="playlist-panel" id="playlist-panel">
+            <div class="playlist-header">
+                <h3>Playlist</h3>
+                <button id="close-playlist"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul id="playlist-ul">
+                <!-- Items will be added by JS -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="task4.js"></script>
+</body>
+</html>
