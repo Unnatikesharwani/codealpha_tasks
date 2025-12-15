@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Unnati Kesharwani</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Resume Specific Base Styles overrides/additions */
+        body {
+            background-color: var(--bg-light);
+            color: #333;
+        }
+
+        
+        .resume-page-container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+        }
+
+        .resume-header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content h1 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .contact-details {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .contact-details span {
+            margin-right: 15px;
+        }
+
+        .contact-details i {
+            margin-right: 5px;
+            color: var(--primary-color);
+        }
+
+        .resume-section {
+            margin-bottom: 25px;
+        }
+
+        .resume-section-title {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            font-weight: 700;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .resume-item {
+            margin-bottom: 15px;
+        }
+
+        .resume-item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .resume-item-title {
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+
+        .resume-item-subtitle {
+            font-style: italic;
+            color: #555;
+        }
+
+        .resume-date {
+            font-weight: 500;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .resume-list {
+            list-style: disc;
+            margin-left: 20px;
+            margin-top: 5px;
+            color: #444;
+        }
+
+        .resume-list li {
+            margin-bottom: 3px;
+        }
+
+        .skills-row {
+            display: flex;
+            margin-bottom: 8px;
+        }
+
+        .skills-label {
+            font-weight: 700;
+            width: 140px;
+            flex-shrink: 0;
+            color: var(--secondary-color);
+        }
+
+        .print-btn-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .resume-page-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+            }
+
+            .print-btn-container,
+            .navbar {
+                display: none !important;
+            }
+
+            .review-alert {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Simple Nav for returning -->
+    <nav class="navbar" style="position: relative; box-shadow: none; padding: 10px 0;">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">Unnati.</a>
+            <a href="index.html" class="btn btn-outline" style="padding: 5px 15px; font-size: 0.9rem;">Back to
+                Portfolio</a>
+        </div>
+    </nav>
+
+    <div class="print-btn-container">
+        <button onclick="window.print()" class="btn btn-primary"><i class="fas fa-print"></i> Print / Download
+            PDF</button>
+    </div>
+
+    <div class="resume-page-container">
+        <!-- Header -->
+        <header class="resume-header">
+            <div class="header-content">
+                <h1>Unnati Kesharwani</h1>
+                <p style="font-size: 1.1rem; color: #444;">Computer Science Student (AI & ML)</p>
+                <div class="contact-details">
+                    <span><i class="fas fa-phone"></i> 8349058994</span>
+                    <span><i class="fas fa-envelope"></i> unnatikesharwanisgr@gmail.com</span>
+                    <br>
+                    <span><i class="fab fa-linkedin"></i> linkedin.com/in/unnati-kesharwani</span>
+                    <span><i class="fab fa-github"></i> github.com/unnati</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="resume-section">
+            <h2 class="resume-section-title">Professional Summary</h2>
+            <p style="color: #444; line-height: 1.5;">
+                Motivated B.Tech Computer Science student specializing in AI & ML (2023–2027) with strong
+                problem-solving and front-end development skills. Proficient in C++, HTML, CSS, JavaScript, and React.
+                Awarded TFW Scholarship and served as Student Council President demonstrating leadership and
+                organizational strengths. Seeking internship opportunities in web development or AI technologies.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section class="resume-section">
+            <h2 class="resume-section-title">Education</h2>
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">B.Tech in Computer Science (AI & ML)</span>
+                    <span class="resume-date">2023 – 2027</span>
+                </div>
+                <div class="resume-item-subtitle">Oriental Institute of Science and Technology, Bhopal</div>
+                <div class="resume-list">
+                    <li>CGPA: 7.9/10</li>
+                </div>
+            </div>
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">Class XII</span>
+                    <span class="resume-date">2023</span>
+                </div>
+                <div class="resume-item-subtitle">St. Mary's Sr. Sec. School, Sagar</div>
+                <div class="resume-list">
+                    <li>Percentage: 83%</li>
+                </div>
+            </div>
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">Class X</span>
+                    <span class="resume-date">2021</span>
+                </div>
+                <div class="resume-item-subtitle">St. Mary's Sr. Sec. School, Sagar</div>
+                <div class="resume-list">
+                    <li>Percentage: 91%</li>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="resume-section">
+            <h2 class="resume-section-title">Technical Skills</h2>
+            <div class="skills-row">
+                <span class="skills-label">Programming:</span>
+                <span>C++, Python (Beginner)</span>
+            </div>
+            <div class="skills-row">
+                <span class="skills-label">Web Technologies:</span>
+                <span>HTML, CSS, JavaScript, React, Responsive Web Design</span>
+            </div>
+            <div class="skills-row">
+                <span class="skills-label">Tools:</span>
+                <span>VS Code, Canva, MS Office</span>
+            </div>
+            <div class="skills-row">
+                <span class="skills-label">Core Skills:</span>
+                <span>Video Editing, Git, Communication, Time Management</span>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="resume-section">
+            <h2 class="resume-section-title">Projects</h2>
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">Personal Portfolio Website</span>
+                </div>
+                <p style="color: #444; font-size: 0.95rem;">Developed a responsive portfolio using HTML, CSS, JavaScript
+                    to showcase skills, projects and achievements.</p>
+            </div>
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">Other Projects</span>
+                </div>
+                <p style="color: #444; font-size: 0.95rem;">
+                    Created various web applications including an <strong>Image Gallery</strong>, <strong>Starbucks
+                        Clone</strong>, <strong>Calculator</strong>, <strong>Music Player</strong>, and <strong>Weather
+                        Detector</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="resume-section">
+            <h2 class="resume-section-title">Certifications</h2>
+            <ul class="resume-list">
+                <li><strong>NPTEL - Artificial Intelligence: Concept and Technology</strong> (Silver + Elite, 78%)</li>
+                <li>Python Programming – LetsUpgrade</li>
+                <li>TCS iON Career Edge – Young Professional</li>
+                <li>Oracle Gen AI Certificate</li>
+            </ul>
+        </section>
+
+        <!-- Achievements & Leadership -->
+        <section class="resume-section">
+            <h2 class="resume-section-title">Achievements & Leadership</h2>
+            <ul class="resume-list">
+                <li><strong>TFW Scholarship holder</strong> (top academic performers)</li>
+                <li><strong>Student Council President (Head Girl)</strong> – managed 1200+ students and conducted major
+                    events</li>
+                <li><strong>Smart India Hackathon (SIH)</strong> – shortlisted at college level</li>
+                <li>Organized TEDx Talks and Alumni Event</li>
+            </ul>
+        </section>
+
+        <!-- Languages -->
+        <section class="resume-section">
+            <h2 class="resume-section-title">Languages</h2>
+            <div class="skills-row">
+                <span class="skills-label">Hindi:</span>
+                <span>Native</span>
+            </div>
+            <div class="skills-row">
+                <span class="skills-label">English:</span>
+                <span>B2 Level</span>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
